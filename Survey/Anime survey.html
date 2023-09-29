@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Anime survey</title>
+  <link rel='stylesheet' href='survey.css'>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+  <h1 id='title'>Anime Survey</h1>
+  <p id='description'>Please fill out the form.</p>
+  </div>
+  <form method='post' id='survey-form' autocomplete="on">
+  <div class="standard-info">
+    <fieldset class="field-info">
+      <div class="information">
+      <label  id='name-label' for='name'>Enter your first name: </label>
+        <br>  
+        <input type='text' id='name' name='name' required placeholder="Enter your first name">
+      </div>
+      <div class="information">
+      <label id="last-name" for='last-name'>Enter your last name: </label>
+        <br>
+        <input type='text' id='last-name' name='last-name' required placeholder="Enter your last name">
+      </div>
+      <div class="information">
+      <label id="email-label" for='email'>Enter your email: </label>
+        <br>
+        <input type='email' id='email'  name='email' required>
+      </div>
+      <div class="information">
+      <label id="password-label" for='email-password'>Enter password: </label>
+        <br>
+        <input type='password' id='email-password' name='email-password' required>
+      </div>
+    </fieldset>
+  </div>
+  <div class="anime-info">
+    <fieldset class='field-anime'>
+      <div class="question">
+      <label for='do' >Do you watch anime? </label>
+      </div>
+      <div class="answer">
+        <input type='radio'  name='do' class='inline' value='yes'>Yes 
+        <input type='radio'  name='do' class='inline' value='no'> No
+      </div>
+      <div class="question">
+      <label for='how'>How do you watch anime?  </label>
+      </div>
+      <div class="answer">
+      <input type='checkbox' name='how' class='inline' value="subbed">Subbed 
+      <input type='checkbox' name='how'  class='inline' value="dubbed">Dubbed(T_T)
+      </div>
+      <div class="question">
+      <label id='number'>How many episodes do you watch in a day? </label>
+      </div>
+      <div class="answer">
+      <input type='number' name='number' min='1' max='20'>
+      </div>
+      <div class="question">
+     <label for='fav'>What is your favourite anime? </label>
+     </div>
+     <div class="answer">
+         <select id='fav'> 
+           <option value=''>(select one)</option>
+           <option value='1'>One Piece</option>
+           <option value='2'>One Piece</option>
+           <option value='3'>One Piece</option>
+           <option value='4'>One Piece</option>
+           </select>
+     </div>
+     <div class="question">
+      <label for='type'>What makes this anime your favourite? </label>
+     </div>
+     <div class="answer">
+        <input type='radio' class='inline' name='type' value="the story">The story 
+        <input type='radio' name='type' class='inline' value="the characters">The characters 
+        <input type='radio' name='type' class='inline'value="the fights">The fights 
+        <input type='radio' name='type' class='inline' value='Zoro' checked="zoro">Zoro
+     </div>
+    </fieldset>
+  </div>
+  <div class="submission">
+    <input type='submit' value='Submit' />
+  </div>
+  </form>
+</div>
+</body>
+</html>
